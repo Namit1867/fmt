@@ -65,3 +65,4 @@ extern "C" int fmt_vprint(FILE* stream, const char* fmt, const fmt_arg* args,
   FMT_CATCH(...) {}
   return fmt_error;
 }
+
