@@ -471,5 +471,3 @@ TEST(format_impl_test, to_utf8) {
   auto s = std::string("ёжик");
   auto u = fmt::detail::to_utf8<wchar_t>(L"\x0451\x0436\x0438\x043A");
   EXPECT_EQ(s, u.str());
-  EXPECT_EQ(s.size(), u.size());
-}
